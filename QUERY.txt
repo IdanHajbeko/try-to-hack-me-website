@@ -1,0 +1,25 @@
+SIGN UP:
+
+INSERT INTO users VALUES (NULL, {username}, {password}, {email}, {name}, 0, NULL);
+
+SELECT username FROM users;
+
+LOGIN:
+
+SELECT password FROM users where username = {username};
+
+FORGOT PASSWORD:
+
+SELECT email FROM users where username = {username};
+
+SELECT username FROM users where email = {email};
+
+SELECT email FROM users where email = {email};
+
+UPDATE users SET password={new password} WHERE username={username} OR email = {email};
+
+money:
+
+SELECT moneyinaccount FROM users where username = {username};
+
+UPDATE users SET moneyinaccount={money to change to} WHERE username={username};
