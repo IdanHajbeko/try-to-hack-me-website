@@ -1,6 +1,6 @@
 SIGN UP:
 
-INSERT INTO users VALUES (NULL, {username}, {password}, {email}, {name}, 0, NULL);
+INSERT INTO users VALUES (NULL, {username}, {password}, {email}, {name}, 0, NULL, 0);
 
 SELECT username FROM users;
 
@@ -22,4 +22,9 @@ money:
 
 SELECT moneyinaccount FROM users where username = {username};
 
-UPDATE users SET moneyinaccount={money to change to} WHERE username={username};
+UPDATE users SET moneyinaccount={money to change to} WHERE username={username}; 
+
+
+
+you can see the sql output when you check the moeny 
+employees salary שמפטרים

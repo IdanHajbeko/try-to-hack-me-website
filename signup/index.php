@@ -17,7 +17,7 @@
       <input type="text" placeholder="Enter name" name="name" required maxlength="20"><br><br>
 
         <label for="username"><b>username</b></label><br>
-      <input type="text" placeholder="Enter username" name="uname" required minlength="4" maxlength="15"><br><br>
+      <input type="text" placeholder="Enter username" name="uname" required minlength="4" maxlength="25"><br><br>
 
         <label for="email"><b>email</b></label><br>
       <input type="email" placeholder="Enter username" name="email" required><br><br>
@@ -54,7 +54,7 @@
                 $stat = 0;
             } else {
                 // Use prepared statement to prevent SQL injection
-                $stmt = $conn->prepare("INSERT INTO users VALUES (NULL, ?, ?, ?, ?, 0, 0)");
+                $stmt = $conn->prepare("INSERT INTO users VALUES (NULL, ?, ?, ?, ?, 0, 0, 0)");
                 $stmt->bind_param("ssss", $username, $password, $email, $name);
 
                 if ($stmt->execute()) {

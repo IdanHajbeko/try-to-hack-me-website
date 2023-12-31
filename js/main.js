@@ -37,7 +37,7 @@ function setCookie(cname,cvalue,exdays) {
 }
 
 function challenge_one() {
-  if (username_hash === "aae039d6aa239cfc121357a825210fa3" && password_hash === "395363561ee047df818b8d93fd7dec08") {
+  if (username_hash === "84f3ea20769026be4b6512d3e0399832" && password_hash === "395363561ee047df818b8d93fd7dec08") {
      show_result("Challenge 1 completed", 1);
      setCookie("mission_1", 1, 30);
      check_missions()
